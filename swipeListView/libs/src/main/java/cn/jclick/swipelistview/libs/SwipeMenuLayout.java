@@ -251,13 +251,13 @@ public class SwipeMenuLayout extends FrameLayout {
                                     if(getWidth() * 0.8 >  mMenuLeftView.getWidth()){
                                         if( Math.abs((mDownX - event.getX())) > getWidth() * 0.8){
                                             if(mMenuLeftView.getOnStrechEndCalledListener() != null){
-                                                mMenuLeftView.getOnStrechEndCalledListener().onMenuItemStrechEndCalled(mMenuLeftView.getPosition(), true, mMenuLeftView.getmMenu(), mMenuLeftView.getmMenu().getLeftMenuItems().get(mMenuLeftView.getmMenu().getLeftMenuItems().size() - 1));
+                                                mMenuLeftView.getOnStrechEndCalledListener().onMenuItemStrechEndCalled(mMenuLeftView.getPosition(), false, mMenuLeftView.getmMenu(), mMenuLeftView.getmMenu().getLeftMenuItems().get(mMenuLeftView.getmMenu().getLeftMenuItems().size() - 1));
                                             }
                                         }
                                     }else{
                                         if(mDownX - event.getX() > mMenuRightView.getWidth() * 0.8){
                                             if(mMenuLeftView.getOnStrechEndCalledListener() != null){
-                                                mMenuLeftView.getOnStrechEndCalledListener().onMenuItemStrechEndCalled(mMenuLeftView.getPosition(), true, mMenuLeftView.getmMenu(), mMenuLeftView.getmMenu().getLeftMenuItems().get(mMenuLeftView.getmMenu().getLeftMenuItems().size() - 1));
+                                                mMenuLeftView.getOnStrechEndCalledListener().onMenuItemStrechEndCalled(mMenuLeftView.getPosition(), false, mMenuLeftView.getmMenu(), mMenuLeftView.getmMenu().getLeftMenuItems().get(mMenuLeftView.getmMenu().getLeftMenuItems().size() - 1));
                                             }
                                         }
                                     }
